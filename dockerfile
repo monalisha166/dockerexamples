@@ -4,8 +4,8 @@ FROM openjdk:17-alpine3.14
 WORKDIR /application
 #WORKDIR line sets the working directory for our Docker image
   
-COPY build/libs/awesome-app-1.0.jar ./
+COPY build/libs\Program Files\Java\jdk-11.0.6\bin ./
    COPY line copies the build/libs/awesome-app-1.0.jar file from your host machine to the Docker image.
 
-CMD ["java", "-jar", "awesome-app-1.0.jar"]
+CMD ["java", "-jar", jdk-11.0.6\bin"]
   CMD line specifies the command that will be executed when the Docker container is started
